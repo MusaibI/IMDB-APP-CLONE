@@ -4,7 +4,7 @@ const movieContainer = document.querySelector(".movies-list");
 const favoriteList = document.querySelector(".favorites-list")
 
 async function fetchMovie(query = "titanic") { //Default it will take as titanic
-    const moviesList = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${query}`)
+    const moviesList = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`)
     const data = await moviesList.json();
     console.log(data)
 
