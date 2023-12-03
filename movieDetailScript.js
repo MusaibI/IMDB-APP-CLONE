@@ -10,7 +10,7 @@ function getMovieIdFromUrl() {
 const movieId = getMovieIdFromUrl();
 
 async function fetchSingleMovie() {
-    const movieList = await fetch(`http://www.omdbapi.com/?i=${movieId}&apikey=862a3572`)
+    const movieList = await fetch(`https://www.omdbapi.com/?i=${movieId}&apikey=862a3572`)
     const data = await movieList.json();
     console.log(data)
 
